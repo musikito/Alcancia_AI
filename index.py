@@ -42,7 +42,8 @@ thread_id = os.getenv('THREAD_ID')
 
 
 # Create the messages
-message = "How much money do I need to save to retire at 65?"
+# message = "How much money do I need to save to retire at 65?"
+message = input("Ask me questions about how to improve your financial situation: ")
 message = client.beta.threads.messages.create(
     thread_id=thread_id,
     role="user",
