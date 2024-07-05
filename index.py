@@ -39,8 +39,8 @@ model = "gpt-4o"
 # thread_id = thread.id
 # print(thread_id)
 
-assistant_id = "asst_MMDwzAbThf16St6xpcqPGZ98"
-thread_id = "thread_bdbedHzjlDxDxbJfaI7QvbBY"
+assistant_id = os.getenv('ASSISTANT_ID')
+thread_id = os.getenv('THREAD_ID')
 
 
 # Create the messages
