@@ -6,7 +6,6 @@ This project is an asynchronous web assistant built using `aiohttp` that interac
 
 - Asynchronous handling of user queries.
 - Interaction with OpenAI's GPT-4o model.
-- Simple HTTP server to serve the frontend.
 
 ## Prerequisites
 
