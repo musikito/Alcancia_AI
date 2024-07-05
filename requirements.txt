@@ -2,3 +2,4 @@ flask
 python-dotenv
 openai
 aiohttp 
+aiohttp-jinja2

@@ -3,7 +3,7 @@ import openai
 from dotenv import load_dotenv
 import time
 import logging
-from datetime import datetime
+
 
 # Load environment variables from .env file
 load_dotenv()
