@@ -32,7 +32,7 @@ const Assistant: React.FC<AssistantProps> = ({ onAsk, messages, setMessages }) =
 
   return (
     <div className="assistant-container">
-      <ChatBox messages={messages} />
+      {/* <ChatBox messages={messages} /> */}
       <input
         type="text"
         value={userInput}
