@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import os
 import openai
 from dotenv import load_dotenv
@@ -42,6 +43,9 @@ def wait_for_run_completion(client, thread_id, run_id, sleep_interval=5):
 
 # Initialize Flask app
 app = Flask(__name__)
+
+# Allow CORS requests from your Next.js app origin
+CORS(app, origins=['http://localhost:3000'])
 
 # Assistant and Thread IDs (assuming these are pre-created and stored)
 assistant_id = os.getenv('ASSISTANT_ID')
