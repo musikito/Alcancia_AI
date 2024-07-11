@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ChatBox from './ChatBox';
+// import ChatBox from './ChatBox';
 
 interface AssistantProps {
   onAsk: (question: string) => void;
@@ -15,6 +15,10 @@ interface Message {
 const Assistant: React.FC<AssistantProps> = ({ onAsk, messages, setMessages }) => {
   const [userInput, setUserInput] = useState('');
 
+  /**
+   * Handles the user's request to ask the assistant a question.
+   * If the user has entered input, it calls the `onAsk` callback with the user's input and clears the input field.
+   */
   const handleAsk = () => {
     if (userInput) {
       onAsk(userInput);
